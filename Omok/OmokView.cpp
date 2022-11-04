@@ -119,10 +119,11 @@ void COmokView::OnDraw(CDC* pDC)
 				pDC->SelectObject(pold);
 			}
 		}
-		// 가비지 수집
-		yelbrush.DeleteObject();
-		blbrush.DeleteObject();
-		whbrush.DeleteObject();
+	}
+	// 가비지 수집
+	yelbrush.DeleteObject();
+	blbrush.DeleteObject();
+	whbrush.DeleteObject();
 }
 
 void COmokView::OnRButtonUp(UINT /* nFlags */, CPoint point)
